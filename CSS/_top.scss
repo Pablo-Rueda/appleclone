@@ -1,0 +1,26 @@
+.top{
+    .top-area{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: $navBarSize; 
+        font-size: $navTextSize;
+        font-family: arial;
+    }
+    .warning-area{
+        background-color: $warningAreaColor;
+        color:white;
+    }
+    .attention-area{
+        background-color: $attentionAreaColor;   
+        color:black;
+        a{
+            color:$warningAreaColor;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+

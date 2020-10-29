@@ -1,0 +1,98 @@
+.nav-wrapper-vertical{
+    position: fixed;
+    right:0px;
+    height: $navBarSize; 
+    width: 100%; 
+    z-index: 2;
+    overflow: hidden;
+    background-color: rgba($navBarColor,0.8);
+    .nav-content-wide-screen{ //ul
+        display:block;
+        height: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin:0px 8rem;
+        li{
+            display: inline;
+            margin: 0;
+            padding:0;
+            a{
+                i{
+                    
+                    font-size: 20px;
+                }
+                color:$navTextColor;
+                text-decoration: none;
+                font-size: $navTextSize;
+                font-family: $fontFamily;
+                padding:auto 10px;
+            }
+            a:hover{
+                color:white;
+                text-decoration: none;
+                cursor:pointer;
+            }
+        }
+    }
+    .nav-content-small-screen{
+        display:none;
+    }
+}
+
+.nav-blurr{
+    position: fixed;
+    right:0px;
+    height: $navBarSize; 
+    width: 100%; 
+    z-index: 1;
+    overflow: hidden;
+    background-color: transparent;
+}
+.nav-area{
+    height: $navBarSize; 
+}
+
+@media screen and (max-width: 1250px){
+    .nav-wrapper-vertical{
+        .nav-content-wide-screen{
+            margin:0px 1rem;
+        }
+    }
+}
+@media screen and (max-width: 745px) {
+    .nav-wrapper-vertical{
+        .nav-content-wide-screen{
+            display:none;
+        }
+        .nav-content-small-screen{ //ul
+            display:block;
+            height: 100%; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin:0px 10px;
+            li{
+                display: inline;
+                margin: 0;
+                padding:0;
+                a{
+                    i{
+                        
+                        font-size: 20px;
+                    }
+                    color:$navTextColor;
+                    text-decoration: none;
+                    font-size: $navTextSize;
+                    font-family: $fontFamily;
+                    padding:auto 10px;
+                }
+                a:hover{
+                    color:white;
+                    text-decoration: none;
+                    cursor:pointer;
+                }
+            }
+        }
+    }
+}

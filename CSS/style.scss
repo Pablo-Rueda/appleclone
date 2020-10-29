@@ -1,0 +1,19 @@
+//font style
+$fontFamily: 'Montserrat', sans-serif;
+
+//NavBar style
+$navBarColor: black;
+$navBarSize:44px;
+$navTextColor:rgb(230, 230, 230);
+$navTextSize:14px;
+
+// Top section
+$warningAreaColor:rgb(17, 112, 201);;
+$attentionAreaColor:rgb(252, 252, 252);;
+
+
+
+@import "./base";
+@import "./navbar";
+@import "./top";
+@import "./firstSection";
