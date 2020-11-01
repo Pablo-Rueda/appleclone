@@ -3,8 +3,8 @@
         display:flex;
         align-items: center;
         justify-content: center;
-        height: $navBarSize; 
-        font-size: $navTextSize;
+        min-height: $navBarSize; 
+        font-size: 14px;
         font-family: arial;
     }
     .warning-area{
@@ -24,3 +24,13 @@
     }
 }
 
+@media screen and (max-width: 745px) {
+    .top-area{
+        .top-content{
+            padding: 5px;
+            align-self: center;
+            text-align: center;
+            width: 250px;
+        }
+    }
+}
