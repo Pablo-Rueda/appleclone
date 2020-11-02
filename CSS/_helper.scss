@@ -4,6 +4,7 @@
     text-align: center;
     a{
         text-decoration: none;
+        color: rgb(0, 102, 255);
     }
     h1,h2,h3,h4,h5,h6, p{
         font-family:  $secondFontFamily;
@@ -46,8 +47,8 @@
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
     .cell{
-        margin: 10px ;
         min-height: 500px;
         background-color: rgb(250, 250, 250);
         display: flex;
@@ -55,6 +56,7 @@
         text-align: center;
         cursor: pointer;
         a{
+            color: rgb(0, 102, 255);
             text-decoration: none;
         }
         h1,h2,h3,h4,h5,h6, p{
@@ -83,16 +85,16 @@
             font-weight: normal;
         }
         .link{
+            display: inline;
             font-size: 0.9em;
-            padding: 0px 1em;
+            padding: 0px 3%;
         }
         .link:hover{
             text-decoration: underline;
         }
         img{
             align-self: center;
-            max-width: 550px;
-            width: 100%;
+
         }
     }
 }
@@ -139,7 +141,7 @@ text-decoration: underline;
             font-size:32px;
         }
         h2{
-            font-size:1.5em;
+            font-size: 1.5em;
         }
         h6{
             font-size: 0.8em;
@@ -163,6 +165,19 @@ text-decoration: underline;
     }
     .hide-small{
         display: none;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        .cell{
+            min-height: 300px;
+            h1{
+                padding-top:10px;
+            }
+            .link{
+                padding: 0px 5%;
+            }
+        }
+
     }
 }
 

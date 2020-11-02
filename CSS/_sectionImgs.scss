@@ -29,7 +29,18 @@
         width: 100%;
     }
 }
+.img-ipad-air-big{
+    max-width: 550px;
+    width: 100%;
+}
 
+.tv-cell{
+    height: 600px ;
+    background: url(./../images/grid-section/tv-main.PNG);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position:center bottom; 
+}
 @media screen and (max-width: 745px) {
     .img-iphone12{
         width: 100%;
@@ -48,4 +59,13 @@
         padding-left: 0px;
         padding-top: 30px;
     }
+    .img-ipad-air-small{
+        max-width: 200px;
+        width: 100%;
+    }
+    .tv-cell{
+        height: 525px ;
+        background-size: 30em;
+    }
+    
 }
