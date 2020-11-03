@@ -1,3 +1,11 @@
+.plus-button{
+    display: none;
+    float:right;
+    padding-right: 20px;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
 .footer{
     margin-top: 10px;
     background-color: rgb(245, 245, 245);
@@ -25,6 +33,7 @@
             border-bottom: 1px solid rgb(210, 210, 210);
         }
         .categories{
+            display: inline;
             padding-top: 25px;
             margin-bottom: 0px;
             font-weight: bold; 
@@ -50,18 +59,32 @@
         .copyright{
             display: flex;
             flex-direction: row;
-            padding-top: 15px;
-            p{
-                padding: 0px;
-                margin: 0px;
+            margin-top: 10px;
+            ul{
+                height: 0px;
                 line-height: 0px;
+                padding-left: 3rem;
+                li{ 
+                    display: inline;
+                    padding: 0px ;
+                    a{
+                        border-right: 1px solid grey;
+                        padding-right: 8px;
+                        margin: 0px;
+                    }
+                }
             }
             a{
-                @extend ".categories ul"
+                color: rgb(102, 102, 102);
+                font-size: 12px;
+                line-height: 16px;
+                margin-bottom: 1em;
+                text-decoration: none;
             }
         }
     }
 }
+
 
 
 @media screen and (max-width: 1200px) {
@@ -75,9 +98,27 @@
 @media screen and (max-width: 745px) {
     .footer{
         .footer-content{
+            .categories{
+                padding-top: 10px;
+            }
             .footer-colums{
                 grid-template-columns: repeat(1,1fr);
+                .col{
+                    .content-category{
+                        padding-bottom: 5px;
+                        border-bottom: 1px solid lightgrey;
+                        ul{
+                            display: none;
+                            li{
+                                padding-left: 25px;
+                            }
+                        }
+                    }
+                }
             }
         } 
+    }
+    .plus-button{
+        display: inline;
     }
 }
