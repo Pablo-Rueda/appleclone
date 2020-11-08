@@ -1,0 +1,55 @@
+#shop{
+    display: none;
+}
+.triangle{
+    position: fixed;
+    z-index: 11;
+    top: $navBarSize - 8px;
+    right: 171px;
+    width: 0px; 
+    height: 0px; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid white;
+}
+.shopbag{
+    position: fixed;
+    z-index: 10;
+    width: 300px;
+    height: 350px;
+    top: $navBarSize + 5px;
+    right: 30px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid grey;
+    a{
+        color: rgb(66, 139, 248);
+    }
+}
+
+
+@media screen and (max-width: 1250px){
+    .triangle{
+        right: 4.6%;
+    }
+    .shopbag{
+        right: 5px;
+    }
+}
+@media screen and (max-width: 745px) {
+    #shop{
+        display: none;
+    }
+    .triangle{
+        right: 5px;
+    }
+    .shopbag{
+        top: $navBarSize;
+        width: 100%;
+        right: 0px;
+        border-radius: 0px;
+        border: 0px solid grey;
+        border-bottom: 1px solid grey;
+        text-align: center;
+    }
+}

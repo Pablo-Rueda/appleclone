@@ -56,6 +56,50 @@
     height: $navBarSize; 
 }
 
+#hambar{
+    display: none;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top:0px;
+    background-color: black;
+    .nav-content-small-screen{
+        height: $navBarSize; 
+        top:0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 19px;
+    }
+}
+
+.hidden-elements{
+    p{
+        text-align: center;
+        font-size: 16px;
+        color: grey;
+        margin: 2rem;
+    }
+    ul{
+        list-style: none;
+        margin: 0px 25px ;
+        li{
+            display: flex;
+            flex-direction: row;
+            padding: 10px 0px;
+            margin: 0px;
+            border-top: 1px solid grey;
+            a{
+                text-decoration: none;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1250px){
     .nav-wrapper-vertical{
         .nav-content-wide-screen{
